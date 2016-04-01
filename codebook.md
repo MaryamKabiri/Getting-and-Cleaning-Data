@@ -28,7 +28,9 @@ Files in the original data set "UCI HAR Dataset"
 [15] "./UCI HAR Dataset/test/X_test.txt"                             
 [16] "./UCI HAR Dataset/test/y_test.txt"                             
 [17] "./UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt" 
+
 [18] "./UCI HAR Dataset/train/Inertial Signals/body_acc_y_train.txt" 
+
 [19] "./UCI HAR Dataset/train/Inertial Signals/body_acc_z_train.txt" 
 [20] "./UCI HAR Dataset/train/Inertial Signals/body_gyro_x_train.txt"
 [21] "./UCI HAR Dataset/train/Inertial Signals/body_gyro_y_train.txt"
