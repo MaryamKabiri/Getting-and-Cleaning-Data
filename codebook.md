@@ -27,18 +27,32 @@ Files in the original data set "UCI HAR Dataset"
 [14] "./UCI HAR Dataset/test/subject_test.txt"                       
 [15] "./UCI HAR Dataset/test/X_test.txt"                             
 [16] "./UCI HAR Dataset/test/y_test.txt"                             
-[17] "./UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt" 
-[18] "./UCI HAR Dataset/train/Inertial Signals/body_acc_y_train.txt" 
-[19] "./UCI HAR Dataset/train/Inertial Signals/body_acc_z_train.txt" 
-[20] "./UCI HAR Dataset/train/Inertial Signals/body_gyro_x_train.txt"
-[21] "./UCI HAR Dataset/train/Inertial Signals/body_gyro_y_train.txt"
-[22] "./UCI HAR Dataset/train/Inertial Signals/body_gyro_z_train.txt"
-[23] "./UCI HAR Dataset/train/Inertial Signals/total_acc_x_train.txt"
-[24] "./UCI HAR Dataset/train/Inertial Signals/total_acc_y_train.txt"
-[25] "./UCI HAR Dataset/train/Inertial Signals/total_acc_z_train.txt"
-[26] "./UCI HAR Dataset/train/subject_train.txt"                     
+[17] "./UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt"  
+[18] "./UCI HAR Dataset/train/Inertial Signals/body_acc_y_train.txt"  
+[19] "./UCI HAR Dataset/train/Inertial Signals/body_acc_z_train.txt"  
+[20] "./UCI HAR Dataset/train/Inertial Signals/body_gyro_x_train.txt"  
+[21] "./UCI HAR Dataset/train/Inertial Signals/body_gyro_y_train.txt"  
+[22] "./UCI HAR Dataset/train/Inertial Signals/body_gyro_z_train.txt"  
+[23] "./UCI HAR Dataset/train/Inertial Signals/total_acc_x_train.txt"  
+[24] "./UCI HAR Dataset/train/Inertial Signals/total_acc_y_train.txt"  
+[25] "./UCI HAR Dataset/train/Inertial Signals/total_acc_z_train.txt"  
+[26] "./UCI HAR Dataset/train/subject_train.txt"                       
 [27] "./UCI HAR Dataset/train/X_train.txt"                           
 [28] "./UCI HAR Dataset/train/y_train.txt"
 
-
+Files used in this project from "UCI HAR Dataset"
+==================================================
+1. Data files  
+"./UCI HAR Dataset/test/Y_test.txt"   
+"./UCI HAR Dataset/train/y_train.txt"  
+2. Activity files   
+"./UCI HAR Dataset/test/X_test.txt"  
+"./UCI HAR Dataset/train/X_train.txt"   
+3. Subject files   
+"./UCI HAR Dataset/test/subject_test.txt"   
+"./UCI HAR Dataset/train/subject_train.txt"   
+4. names of column variables for the data table
+"./UCI HAR Dataset/features.txt"    
+5. Activity labels   
+"./UCI HAR Dataset/activity_labels.txt"    
 
