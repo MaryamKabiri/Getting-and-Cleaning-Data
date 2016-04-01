@@ -38,5 +38,6 @@ Files in the original data set "UCI HAR Dataset"
 [25] "./UCI HAR Dataset/train/Inertial Signals/total_acc_z_train.txt"
 [26] "./UCI HAR Dataset/train/subject_train.txt"                     
 [27] "./UCI HAR Dataset/train/X_train.txt"                           
-[28] "./UCI HAR Dataset/train/y_train.txt"   
+[28] "./UCI HAR Dataset/train/y_train.txt"
+
 
