@@ -51,8 +51,16 @@ Files used in this project from "UCI HAR Dataset"
 3. Subject files   
 "./UCI HAR Dataset/test/subject_test.txt"   
 "./UCI HAR Dataset/train/subject_train.txt"   
-4. names of column variables for the data table
-"./UCI HAR Dataset/features.txt"    
+4. names of column variables for the data table   
+"./UCI HAR Dataset/features.txt"        
 5. Activity labels   
 "./UCI HAR Dataset/activity_labels.txt"    
+
+Process
+=========
+1.I firts downloaded the zip file on the computre and then unzip the file on the same directory. Next, I have merged the training, test, and subject data sets. This tidy data set has 10299 observations in 68 columns. The columns are subjectID, activities, and measurments.      
+2.I extracted Extracts only the measurements on the mean and standard deviation for each measurement.    
+3. I appropriately labels the data set with descriptive variable names.      
+4. From the data set in step 4,I created a second, independent tidy data set with the average of each variable for each activity and each subject. The new tidy data set has 180 rows with 68 columns.     
+
 
