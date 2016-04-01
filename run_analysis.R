@@ -1,44 +1,41 @@
 setwd("C:/Users/Maryam/Desktop/Datascientists/Getting and cleaning data/Week 4")
 
-#loading required packages
-packages<-c("data.table", "dplyr", "reshape2")
-sapply(packages, require, character.only=TRUE)
-
+# Loading zip file to computre
 if(!file.exists("./data2")){dir.create("./data2")}
 fileUrl<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl, destfile="./data2/dataset.zip")
 
+#Unzip the file 
  unzip("./data2/dataset.zip")
 
-############## 1 ##############
-## test data
+#Reading and combining test data sets
 xtest<-read.table("UCI HAR Dataset/test/X_test.txt")
 ytest<-read.table("UCI HAR Dataset/test/Y_test.txt")
 subjecttest<-read.table("UCI HAR Dataset/test/subject_test.txt")
 
-## train test
+#Reading and combining train data sets
 xtrain<-read.table("UCI HAR Dataset/train/X_train.txt")
 ytrain<-read.table("UCI HAR Dataset/train/Y_train.txt")
 subjecttrain<-read.table("UCI HAR Dataset/train/subject_train.txt")
                    
-## features and activity data
+#Reading features and activity data sets
 features<-read.table("UCI HAR Dataset/features.txt")
 activity<-read.table("UCI HAR Dataset/activity_labels.txt")
 
-# merging train and test data
+# Merging train and test data sets
 X<-rbind(xtest, xtrain)
 Y<-rbind(ytest, ytrain)
 subject<-rbind(subjecttest, subjecttrain)
 
-############## 2 ##############
+#Extract the mean and standard deviation for each observation 
 extract<-grep("mean\\(\\)|std\\(\\)", features[,2])
 length(extract)
  
-############3 3 ############
+#Name the activities data set
 Y[,1]<-activity[Y[,1], 2]
 head(Y)
 
-############# 4 ##########
+#Lable the data sets
 names(Y)<-"activity"
 names(subject)<-"subjectID"
 featurenames<-features[extract, 2]
@@ -46,7 +43,7 @@ names(X)<-featurenames
 data<-cbind(subject, Y, X)
 dim(data)
 
-########## 5 ############
+#Create new tidy data set with average of eac variable for each activity and subject
 data<-data.table(data)
 tidydata<-data[, lapply(.SD, mean), c("subjectID", "activity")]
 dim(tidydata)
